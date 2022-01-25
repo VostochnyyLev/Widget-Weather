@@ -11,7 +11,7 @@ function render(data) {
     <div>Time:${data.location.localtime}; </div>
     <div>Temperature: ${data.current.temp_c};</div>
     <div>${data.current.condition.text};</div>
-    <div>
+    <div>  
       <img src=${data.current.condition.icon} alt="">
 
     </div>
