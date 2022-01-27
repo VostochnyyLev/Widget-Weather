@@ -1,5 +1,20 @@
 {
-  "dependencies": {
-    "netlify-cli": "^8.14.0"
-  }
+  "name": "widget-weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VostochnyyLev/Widget-Weather.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VostochnyyLev/Widget-Weather/issues"
+  },
+  "homepage": "https://github.com/VostochnyyLev/Widget-Weather#readme"
 }
