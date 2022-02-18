@@ -1,12 +1,17 @@
-export default function render(data) {
-  document.getElementById('wrapper').innerHTML = `
-  <div> Country: ${data.location.country}; </div>
-    <div> City: ${data.location.name}; </div>
-    <div>Time:${data.location.localtime}; </div>
-    <div>Temperature: ${data.current.temp_c};</div>
-    <div>${data.current.condition.text};</div>
+const render = ({ location: { name, country, localtime }, current: { temp_c, condition: { icon, text } } }) => {
+  document.getElementById('wrapper').insertAdjacentHTML(
+    'beforeend',
+    `
+  <div> Country: ${country}; </div>
+    <div> City: ${name}; </div>
+    <div>Time:${localtime}; </div>
+    <div>Temperature: ${temp_c};</div>
+    <div>${text};</div>
     <div>
-      <img src=${data.current.condition.icon} alt="">
+      <img src=${icon} alt="">
     </div>
-    `;
-}
+    `,
+  );
+};
+
+export default render;
